@@ -5,11 +5,11 @@ if (Meteor.isClient) {
     }
   });
 
-  Template.mentorship.onRendered(function() {
-    this.$('.mas').masonry({
-      itemSelector: ".mas-item",
-      percentPosition: true,
-      gutter: 0
-    });
-  })
+  // Template.mentorship.onRendered(function() {
+  //   this.$('.mas').masonry({
+  //     itemSelector: ".mas-item",
+  //     percentPosition: true,
+  //     gutter: 0
+  //   });
+  // })
 };
