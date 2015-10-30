@@ -1,35 +1,91 @@
 /* CSS declarations go here */
-/*.mas-item {
-  width:24%;
-  padding:0px;
-  margin-bottom: 0px;
-}
-.mas {
-
-  display:-moz-box;
-  -moz-box-pack:center;
-  -moz-box-align:center;
-
-
-  display:-webkit-box;
-  -webkit-box-pack:center;
-  -webkit-box-align:center;
-
-
-  display:box;
-  box-pack:center;
-  box-align:center;
+/*
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }*/
 
 h3 {
   font-family:"Trebuchet MS";
 }
-
-.navLink {
-  line-height:90px;
-  font-size:25px;
+.themeParent {
+  height: 85px;
+  line-height: 85px;
+  text-align: center;
+  padding-bottom:5px;
+}
+.theme {
+  padding-top:5px;
+  padding-bottom:5px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;     
+}
+.mentorshipLogoHolder,
+.mentorshipLogoHolder > img {
+  height:85px;
+}
+.navbar-default {
+  background-color:#ffffff;
 }
 
-.navbar-default {
-  background-color:#086876;
+.navbar.hidden-xs {
+  height:100px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:#44c5e3;
+
+}
+.visible-xs .navbar-nav > li > a {
+  padding-top:7px;
+  padding-bottom:7px;
+  padding-left:7px;
+  padding-right:7px;
+  font-size:15px;
+}
+.hidden-xs .navbar-nav > li > a {
+  padding-top:45px;
+  padding-bottom:7px;
+  padding-left:7px;
+  padding-right:7px;
+  font-size:20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color:#086876;
+}
+
+.navbar-brand {
+  padding:0;
+}
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe,   
+.vresponsive-iframe-container object,  
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding:15px;
+}
+
+#smallBrand > img {
+  max-height: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+#smallCal {
+  padding-bottom:150%;
 }

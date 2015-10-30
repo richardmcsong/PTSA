@@ -1,37 +1,41 @@
 <template name="navBar">
-  <nav class="navbar navbar-default navbar-static-top">
-    <div class="container-fluid">
-    <div class="col-md-2">
-      <img src='ptsa_websitelogo.png' />
+  <nav class="navbar navbar-default navbar-static-top visible-xs">
+    <div class="container">
+    <a href="#" id="smallBrand" class="navbar-brand"><img src='ptsa_websitelogo.png' /></a>
+    <div class="navbar-header">
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
     </div>
-    <div class="col-md-10">
-    <ul class="nav navbar-nav">
-    <li><a href="#">testesttest</a></li>
-      </ul>
-    <ul class="nav navbar-nav navbar-right">
-    <li class="navLink">
-    <a href="{{pathFor 'mentorship'}}">Mentorship</a>
-    </li>
-    <li class="navLink">
-    <a href="{{pathFor 'mentorship'}}">Mentorship</a>
-    </li>
-    <li class="navLink">
-    <a href="{{pathFor 'mentorship'}}">Mentorship</a>
-    </li>
-    <li class="navLink">
-    <a href="{{pathFor 'mentorship'}}">Mentorship</a>
-    </li>
-    <li class="navLink">
-    <a href="{{pathFor 'mentorship'}}">Mentorship</a>
-    </li>
-    <li class="navLink">
-    <a href="{{pathFor 'mentorship'}}">Mentorship</a>
-    </li>
-    <li class="navLink">
-    <a href="{{pathFor 'mentorship'}}">Mentorship</a>
-    </li>
-    </ul>
+    <div class="collapse navbar-collapse navHeaderCollapse">
+      {{> navBarContents}}
     </div>
     </div>
   </nav>
+  <nav class="navbar navbar-default navbar-static-top hidden-xs">
+    <div class="container">
+    <a href="#" id="regularBrand" class="navbar-brand"><img src='ptsa_websitelogo.png' /></a>
+    <div class="navbar-header">
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">f</button>
+    </div>
+    <div class="collapse navbar-collapse navHeaderCollapse">
+      {{> navBarContents}}
+    </div>
+    </div>
+  </nav>
+</template>
+
+<template name="navBarContents">
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="{{pathFor 'mentorship'}}">Mentorship</a></li>
+    <li><a href="{{pathFor 'mentorship'}}">Mentorship</a></li>
+    <li><a href="{{pathFor 'mentorship'}}">Mentorship</a></li>
+    <li><a href="{{pathFor 'mentorship'}}">Mentorship</a></li>
+    <li><a href="{{pathFor 'mentorship'}}">Mentorship</a></li>
+    <li><a href="{{pathFor 'mentorship'}}">Mentorship</a></li>
+    <li><a href="{{pathFor 'mentorship'}}">Mentorship</a></li>
+  </ul>
 </template>
