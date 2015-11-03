@@ -19,7 +19,8 @@ h3 {
   padding-bottom:5px;
   display: inline-block;
   vertical-align: middle;
-  line-height: normal;     
+  line-height: normal;
+  font-size:15px;     
 }
 .mentorshipLogoHolder,
 .mentorshipLogoHolder > img {
